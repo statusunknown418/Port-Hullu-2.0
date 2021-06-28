@@ -12,10 +12,10 @@ export default function Home({ results }) {
       <Head>
         <meta charSet="utf-8" />
         <title>Port HULU 2.0</title>
+        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width" />
         <meta name="description" content="Portfolio website, a Hulu clone" />
         <meta lang="en-us" />
-        <link rel="icon" href="/img/favicon.ico" />
       </Head>
       <Header></Header>
       <Nav />

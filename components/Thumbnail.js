@@ -6,7 +6,7 @@ export const Thumbnail = ({ allProps }) => {
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
   return (
     <div
-      className=" bg-gradient-to-tr from-transparent to-gray-800 rounded-lg p-2 group cursor-pointer transition-all transform  sm:hover:scale-105 ease-in group-hover:z-50 overflow-hidden"
+      className="sm:w-auto sm:h-auto sm:p-0 hover:bg-gradient-to-b hover:from-transparent hover:to-gray-800 bg-gradient-to-tl from-transparent to-gray-800 rounded-lg  group cursor-pointer transition-all transform  sm:hover:scale-105 ease-in group-hover:z-50 overflow-hidden"
       onClick={() => {}}>
       <Image
         className="rounded-lg"
@@ -18,7 +18,7 @@ export const Thumbnail = ({ allProps }) => {
         height={1080}
         width={1920}
       />
-      <div className="p-3">
+      <div className="p-2">
         <p className="truncate max-w-md font-normal text-[1rem]">{allProps.overview}</p>
         <h2 className="text-xl font-medium transition-all duration-150 ease-in-out group-hover:font-bold ">
           {allProps.title || allProps.original_name}

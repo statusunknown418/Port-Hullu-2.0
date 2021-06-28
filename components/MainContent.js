@@ -4,13 +4,14 @@ import { Thumbnail } from "./Thumbnail";
 export const MainContent = ({ requests }) => {
   let array = requests.results;
   return (
-    <div className="sm:m-5 m-10 ">
+    <div className="flex flex-col sm:m-5 items-center">
       <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-5">
         <AnimatePresence>
           {array.map((e) => (
             <motion.div
               exit={{
-                y: 200,
+                y: 0,
+                x: 200,
                 opacity: 0,
                 scale: 0.7,
               }}
