@@ -7,7 +7,6 @@ import requests from "../shared/requests";
 
 // 2 - Now we have access to props
 export default function Home({ results }) {
-  console.log(results);
   return (
     <div className="text-xl font-bold font-sans">
       <Head>
@@ -16,7 +15,7 @@ export default function Home({ results }) {
         <meta name="viewport" content="width=device-width" />
         <meta name="description" content="Portfolio website, a Hulu clone" />
         <meta lang="en-us" />
-        <link rel="icon" href="/public/favicon2.ico" />
+        <link rel="icon" href="/img/favicon.ico" />
       </Head>
       <Header></Header>
       <Nav />
